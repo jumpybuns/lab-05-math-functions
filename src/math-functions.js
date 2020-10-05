@@ -83,16 +83,16 @@ have to be resourceful to figure out how to do this. However, you may continue
 to use the + operator for string concatenation.
 */
 
-// export function sumArrayWithThreeNumbers(sumArr) {
-//     const addABC = sum(sumArr[0], sumArr[1]);
-//     const finalSum = sum(addABC[0], sumArr[2])[0];
-//     const secondElement = `${sumArr[0]},${sumArr[1]},${sumArr[2]} was passed in as an array of numbers, and ${finalSum} is their sum.`;
+export function sumArrayWithThreeNumbers(sumArr) {
+    const addABC = sum(sumArr[0], sumArr[1]);
+    const finalSum = sum(addABC[0], sumArr[2])[0];
+    const secondElement = `${sumArr[0]},${sumArr[1]},${sumArr[2]} was passed in as an array of numbers, and ${finalSum} is their sum.`;
 
 
-//     return [finalSum, secondElement];
+    return [finalSum, secondElement];
 
 
-// }
+}
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
 // Don't forget to create a new branch for your work on the next question!

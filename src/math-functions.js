@@ -26,12 +26,12 @@ Write a function called multiply() that takes in two numbers as arguments and re
 "The product of 5 and 9 is 45."
 */
 
-// export function multiply(a, b) {
-//     const sMult = a * b;
-//     const cMult = `The product of ${a} and ${b} is ${sMult}.`;
-//     return [sMult, cMult];
+export function multiply(a, b) {
+    const sMult = a * b;
+    const cMult = `The product of ${a} and ${b} is ${sMult}.`;
+    return [sMult, cMult];
 
-// }
+}
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
 // Don't forget to create a new branch for your work on the next question!
 
@@ -53,16 +53,16 @@ function that you've already created. You're going to have to be resourceful to 
 how to do this. However, you may continue to use the + operator for string concatenation.
 */
 
-// export function sumAndMultiplyThreeNumbers(a, b, c) { //eslint-disable-line
-//     const sumOfTwo = sum(a, b)[0]; 
-//     const sumOfThree = sum(sumOfTwo, c)[0];
-//     const multTwo = multiply(a, b)[0];
-//     const multThree = multiply(multTwo, c)[0];
-//     const thirdElement = `${a} and ${b} and ${c} sum to ${sumOfThree}.`;
-//     const fourthElement = `The product of ${a} and ${b} and ${c} is ${multThree}.`;
+export function sumAndMultiplyThreeNumbers(a, b, c) { //eslint-disable-line
+    const sumOfTwo = sum(a, b)[0]; 
+    const sumOfThree = sum(sumOfTwo, c)[0];
+    const multTwo = multiply(a, b)[0];
+    const multThree = multiply(multTwo, c)[0];
+    const thirdElement = `${a} and ${b} and ${c} sum to ${sumOfThree}.`;
+    const fourthElement = `The product of ${a} and ${b} and ${c} is ${multThree}.`;
 
-//     return [sumOfThree, multThree, thirdElement, fourthElement];
-// }
+    return [sumOfThree, multThree, thirdElement, fourthElement];
+}
 
 
 // // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
@@ -83,16 +83,16 @@ have to be resourceful to figure out how to do this. However, you may continue
 to use the + operator for string concatenation.
 */
 
-// export function sumArrayWithThreeNumbers(sumArr) {
-//     const addABC = sum(sumArr[0], sumArr[1]);
-//     const finalSum = sum(addABC[0], sumArr[2])[0];
-//     const secondElement = `${sumArr[0]},${sumArr[1]},${sumArr[2]} was passed in as an array of numbers, and ${finalSum} is their sum.`;
+export function sumArrayWithThreeNumbers(sumArr) {
+    const addABC = sum(sumArr[0], sumArr[1]);
+    const finalSum = sum(addABC[0], sumArr[2])[0];
+    const secondElement = `${sumArr[0]},${sumArr[1]},${sumArr[2]} was passed in as an array of numbers, and ${finalSum} is their sum.`;
 
 
-//     return [finalSum, secondElement];
+    return [finalSum, secondElement];
 
 
-// }
+}
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
 // Don't forget to create a new branch for your work on the next question!
@@ -113,15 +113,15 @@ This function should handle an array containing three elements. However,
 you may continue to use the + operator for string concatenation.
 */
 
-// export function multiplyArrayWithThreeNumbers(multArr) { //eslint-disable-line
-//     const multABC = multiply(multArr[0], multArr[1]);
-//     const finalProduct = multiply(multABC[0], multArr[2])[0];
-//     const productString = `The numbers ${multArr[0]},${multArr[1]},${multArr[2]} have a product of ${finalProduct}.`;
+export function multiplyArrayWithThreeNumbers(multArr) { //eslint-disable-line
+    const multABC = multiply(multArr[0], multArr[1]);
+    const finalProduct = multiply(multABC[0], multArr[2])[0];
+    const productString = `The numbers ${multArr[0]},${multArr[1]},${multArr[2]} have a product of ${finalProduct}.`;
 
 
-//     return [finalProduct, productString];
+    return [finalProduct, productString];
 
-// }
+}
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
 
@@ -146,17 +146,17 @@ However, you may continue to use the + operator for string concatenation.
 This function should be dynamic, accepting an array of any length.
 */
 
-// export function multiplyAnyArray(dynamicArray) { //eslint-disable-line
-//     const multABC = multiply(dynamicArray[0], dynamicArray[1]);
-//     const mult2ABC = multiply(multABC[0], dynamicArray[2]);
-//     const mult3ABC = multiply(mult2ABC[0], dynamicArray[3]);
-//     const finalProduct = multiply(mult3ABC[0], dynamicArray[4])[0];
-//     const productString = `The numbers ${dynamicArray[0]},${dynamicArray[1]},${dynamicArray[2]},${dynamicArray[3]},${dynamicArray[4]} have a product of ${finalProduct}.`;
+export function multiplyAnyArray(dynamicArray) { //eslint-disable-line
+    const multABC = multiply(dynamicArray[0], dynamicArray[1]);
+    const mult2ABC = multiply(multABC[0], dynamicArray[2]);
+    const mult3ABC = multiply(mult2ABC[0], dynamicArray[3]);
+    const finalProduct = multiply(mult3ABC[0], dynamicArray[4])[0];
+    const productString = `The numbers ${dynamicArray[0]},${dynamicArray[1]},${dynamicArray[2]},${dynamicArray[3]},${dynamicArray[4]} have a product of ${finalProduct}.`;
 
 
-//     return [finalProduct, productString];
+    return [finalProduct, productString];
 
-// }
+}
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
 // You're done! Submit the link to the repo following the instructions in Canvas.

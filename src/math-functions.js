@@ -146,17 +146,17 @@ However, you may continue to use the + operator for string concatenation.
 This function should be dynamic, accepting an array of any length.
 */
 
-// export function multiplyAnyArray(dynamicArray) { //eslint-disable-line
-//     const multABC = multiply(dynamicArray[0], dynamicArray[1]);
-//     const mult2ABC = multiply(multABC[0], dynamicArray[2]);
-//     const mult3ABC = multiply(mult2ABC[0], dynamicArray[3]);
-//     const finalProduct = multiply(mult3ABC[0], dynamicArray[4])[0];
-//     const productString = `The numbers ${dynamicArray[0]},${dynamicArray[1]},${dynamicArray[2]},${dynamicArray[3]},${dynamicArray[4]} have a product of ${finalProduct}.`;
+export function multiplyAnyArray(dynamicArray) { //eslint-disable-line
+    const multABC = multiply(dynamicArray[0], dynamicArray[1]);
+    const mult2ABC = multiply(multABC[0], dynamicArray[2]);
+    const mult3ABC = multiply(mult2ABC[0], dynamicArray[3]);
+    const finalProduct = multiply(mult3ABC[0], dynamicArray[4])[0];
+    const productString = `The numbers ${dynamicArray[0]},${dynamicArray[1]},${dynamicArray[2]},${dynamicArray[3]},${dynamicArray[4]} have a product of ${finalProduct}.`;
 
 
-//     return [finalProduct, productString];
+    return [finalProduct, productString];
 
-// }
+}
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
 // You're done! Submit the link to the repo following the instructions in Canvas.
